@@ -1,29 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-class KodeBuah
+
+using modul4_1302213102;
+public class Program
 {
-    enum Buah
+    static void Main(string[] args)
     {
-        Apel,
-        Aprikot,
-        Alpukat0,
-        Pisang,
-        Paprika,
-        Blackberry,
-        Ceri,
-        Kelapa,
-        Jagung,
+        Console.WriteLine(KodeBuah.getKodeBuah(KodeBuah.Buah.Apel));
+        Console.WriteLine(KodeBuah.getKodeBuah(KodeBuah.Buah.Jagung));
     }
-    private static string getKodeBuah(Buah buah)
-    {
-        string[] kode = {"A00", "B00", "C00", "D00", "E00", "F00",
-            "H00", "I00", "J00"};
-        return kode[(int)buah];
-    }
-    
-    private static void Main(string[] args)
-    {
-        Console.WriteLine(getKodeBuah(Buah.Jagung));
-        Console.WriteLine(getKodeBuah(Buah.Apel));
-    }
-    
 }
+
