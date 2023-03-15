@@ -51,6 +51,13 @@ namespace modul4_1302213102
         public void ActivateTrigger(trigger Trigger)
         {
             currentState = GetStateBerikutnya(currentState, Trigger);
+            if(Trigger == trigger.TombolS)
+            {
+                Console.WriteLine("Tombol arah bawah ditekan");
+            }else if (Trigger == trigger.TombolW)
+            {
+                Console.WriteLine("Tombol arah atas ditekan");
+            }
         }
     }
 }

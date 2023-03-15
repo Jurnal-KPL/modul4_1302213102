@@ -7,6 +7,13 @@ public class Program
     {
         Console.WriteLine(KodeBuah.getKodeBuah(KodeBuah.Buah.Apel));
         Console.WriteLine(KodeBuah.getKodeBuah(KodeBuah.Buah.Jagung));
+
+        PosisiKarakterGame Posisi = new PosisiKarakterGame();
+        Console.WriteLine( "Posisi pertama adalah "+ Posisi.currentState);
+        Posisi.ActivateTrigger(PosisiKarakterGame.trigger.TombolW);
+        Console.WriteLine("Maka sekarang aku " + Posisi.currentState);
+        Posisi.ActivateTrigger(PosisiKarakterGame.trigger.TombolS);
+        Console.WriteLine("Maka sekarang aku " + Posisi.currentState);
     }
 }
 
